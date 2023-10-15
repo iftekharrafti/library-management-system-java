@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.IssueBookController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="147.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#showBooksBtn" prefHeight="45.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Available Books" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Issue Books" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="55.0" mnemonicParsing="false" onAction="#returnBooksBtn" prefHeight="45.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Return Books" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#savedBooksBtn" prefHeight="45.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Saved Books" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="145.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Sign out" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="93.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+
+            <Label layoutX="294.0" layoutY="29.0" text="Issue Book">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="84.0" prefHeight="21.0" prefWidth="74.0" text="Student Id">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="studentId" layoutX="250.0" layoutY="82.0" prefHeight="25.0" prefWidth="204.0" />
+            <TextField fx:id="studentName" layoutX="248.0" layoutY="122.0" prefHeight="25.0" prefWidth="207.0" />
+            <ChoiceBox fx:id="studentGenderChoicebox" layoutX="249.0" layoutY="159.0" prefHeight="25.0" prefWidth="205.0" />
+            <ChoiceBox fx:id="bookNameChoicebox" layoutX="251.0" layoutY="198.0" prefHeight="25.0" prefWidth="203.0" />
+            <DatePicker fx:id="issuedDate" layoutX="253.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0" />
+            <DatePicker fx:id="returnedDate" layoutX="253.0" layoutY="286.0" prefHeight="25.0" prefWidth="201.0" />
+            <Label layoutX="141.0" layoutY="123.0" text="Student Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="161.0" text="Gender">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="200.0" text="Book Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="242.0" text="Issued Date">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="288.0" text="Returned Date">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="316.0" layoutY="323.0" mnemonicParsing="false" onAction="#takeBook" prefHeight="16.0" prefWidth="67.0" style="-fx-background-color: #F9A799; -fx-border-color: #F9A799; -fx-border-width: 2px;" text="Take" textFill="#4d1515">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="183.0" layoutY="365.0" prefHeight="21.0" prefWidth="313.0" text="You will fine 10 TK per day for late submission." textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+
+</BorderPane>
